@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>A4otak - Ремонт ПК та ноутбуків</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="clipboard-logo.PNG" alt="Логотип сайту" width="400">
+  <nav>
+    <a href="#">Головна</a>
+    <a href="#services">Послуги</a>
+    <a href="#prices">Ціни</a>
+    <a href="#contacts">Контакти</a>
+    <a href="#repair-form">Залишити заявку</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Професійний ремонт комп'ютерів та ноутбуків у Кременчуці</h2>
+  <p>Виїзд майстра, гарантія до 6 місяців</p>
+  <button id="callBtn">Викликати майстра</button>
+  <button>Дізнатись ціни</button>
+  <img src="clipboard-img.PNG" alt="Майстер ремонтує ноутбук" width="400">
+</section>
+
+<section>
+  <h2>Чому обирають A4otak</h2>
+  <ul>
+    <li><b>Досвід:</b> більше 8 років у ремонті ПК та ноутбуків</li>
+    <li><b>Працюємо швидко:</b> виїзд за 30 хвилин</li>
+    <li><b>Гарантія:</b> гарантія на всі роботи 6 місяців</li>
+    <li><b>Чесні ціни:</b> безкоштовна діагностика</li>
+  </ul>
+</section>
+
+<section id="services">
+  <h2>Наші послуги</h2>
+  <div class="services-container">
+    <div class="service-column">
+      <div class="service">
+        <b>Чистка від пилу</b><br>
+        Заміна термопасти, чистка системи охолодження.<br>
+        від 300 грн<br>
+        <button>Замовити</button>
+      </div>
+      <div class="service">
+        <b>Відновлення даних</b><br>
+        З жорстких дисків, SSD та флешок.<br>
+        від 500 грн<br>
+        <button>Замовити</button>
+      </div>
+    </div>
+
+    <div class="service-column">
+      <div class="service">
+        <b>Установка ОС та ПЗ</b><br>
+        Встановлення Windows, драйверів, офісних програм.<br>
+        від 500 грн<br>
+        <button>Замовити</button>
+      </div>
+      <div class="service">
+        <b>Діагностика</b><br>
+        Повна перевірка обладнання.<br>
+        Безкоштовно
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>Відгуки клієнтів</h2>
+  <div class="review-container">
+    <button class="prev-btn">&#10094;</button>
+
+    <div class="review active">
+      <img src="avatar1.png" alt="Аватар 1" class="avatar">
+      <p><b>Олександр</b></p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>Дуже якісний ремонт, ноутбук працює як новий!</p>
+    </div>
+
+    <div class="review">
+      <img src="avatar2.png" alt="Аватар 2" class="avatar">
+      <p><b>Марина</b></p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>Встановили Windows і всі драйвери, все супер!</p>
+    </div>
+
+    <div class="review">
+      <img src="avatar3.png" alt="Аватар 3" class="avatar">
+      <p><b>Дмитро</b></p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>Швидко, якісно і недорого. Рекомендую!</p>
+    </div>
+
+    <div class="review">
+      <img src="avatar4.png" alt="Аватар 4" class="avatar">
+      <p><b>Світлана</b></p>
+      <div class="stars">⭐⭐⭐⭐☆</div>
+      <p>Все сподобалось, робота виконана швидко та якісно.</p>
+    </div>
+
+    <div class="review">
+      <img src="avatar5.png" alt="Аватар 5" class="avatar">
+      <p><b>Владислав</b></p>
+      <div class="stars">⭐⭐⭐☆☆</div>
+      <p>Загалом добре, але довелося чекати майстра трохи довше.</p>
+    </div>
+
+    <div class="review">
+      <img src="avatar6.png" alt="Аватар 6" class="avatar">
+      <p><b>Ірина</b></p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>Чудовий сервіс! Мій ноутбук працює як новий!</p>
+    </div>
+
+    <button class="next-btn">&#10095;</button>
+  </div>
+
+  <div class="review-counter">
+    <span id="current">1</span> / <span id="total">6</span>
+  </div>
+</section>
+
+<section id="repair-form">
+  <h2>Заявка на ремонт</h2>
+  <form>
+    Ім'я: <br><input type="text" name="name"><br><br>
+    Телефон: <br>
+    <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Наприклад, 0671234567" required><br><br>
+    Повідомлення:<br>
+    <textarea name="message" rows="4"></textarea><br>
+    <button type="submit">Викликати майстра</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 A4otak. Всі права захищені.</p>
+</footer>
+<button id="supportBtn">💬 Підтримка</button>
+
+<script src="script.js"></script>
+</body>
+</html>

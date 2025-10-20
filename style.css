@@ -1,0 +1,250 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #20232a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 400px;
+  height: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2b3bff;
+}
+
+button {
+  background-color: #2b3bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d2bcc;
+}
+
+ul {
+  list-style-type: square;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+form input, form textarea {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+form button {
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #20232a;
+  color: white;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-column {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 48%;
+}
+
+.service {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.service-column .service + .service {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .service-column { flex: 0 0 100%; }
+}
+
+#reviews { text-align: center; margin: 50px auto; }
+
+.review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.review {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 100%;
+  min-height: 200px;
+}
+
+.review.active { display: flex; }
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stars { color: #FFD700; font-size: 20px; margin-bottom: 8px; }
+
+.prev-btn, .next-btn {
+  background-color: #2b3bff;
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 40%;
+}
+
+.prev-btn:hover, .next-btn:hover { background-color: #1d2bcc; }
+
+.prev-btn { left: -80px; }
+.next-btn { right: -80px; }
+
+.review-counter { text-align: center; margin-top: 10px; font-weight: bold; }
+#supportBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #2b3bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#supportBtn:hover {
+  background-color: #1d2bcc;
+  transform: scale(1.1);
+}
+
+#supportChat {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  width: 300px;
+  max-height: 400px;
+  background-color: white;
+  border: 2px solid #2b3bff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.chat-hidden {
+  display: none;
+}
+
+.chat-header {
+  background-color: #2b3bff;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header #closeChat {
+  cursor: pointer;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  background-color: #f1f1f1;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#chatInput {
+  border: none;
+  border-top: 1px solid #ccc;
+  padding: 8px;
+  width: calc(100% - 60px);
+}
+
+#sendBtn {
+  width: 50px;
+  border: none;
+  background-color: #2b3bff;
+  color: white;
+  cursor: pointer;
+}
+
+}
